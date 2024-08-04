@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+
+:root{
+    --myOrange: #fb8500;
+    --myGreen: #5c8001;
+}
+
+body{
+    background-image: url("/JEUN DADA/Asset/pexels-photo-2341290\ 1.png");
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x:hidden;
+}
+
+header{
+    width: 100vw;
+    height: auto;
+}
+
+header .topBar{
+   background-color: #000;
+   color: #fff;
+   font-size: 14px;
+   width: 100%;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+header .topBar span{
+    color: #fb8500;
+}
+
+header .navContainer{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+   
+}
+
+header .navContainer .logo{
+    padding-top: 25px;
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+header .navContainer nav{
+    width: 500px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    
+}
+header .navContainer nav ul{
+   
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ 
+header .navContainer nav #close{
+    display: none;
+}
+
+
+header .navContainer nav .B{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+header .navContainer .cart {
+    margin-top: 60px;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+header .navContainer .cart #menu-btn{
+    display: none;
+}
+
+article{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article .topCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+article .container{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+article .container .slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+article .container .slider-wrapper .slider{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    aspect-ratio: 3 / 3;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0.15rem 3rem -0.75rem hsla(0, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+article .container .slider-wrapper .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+} 
+article .container .slider-wrapper .slider-nav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: absolute;
+    top: 100px;
+    left: 610px;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+article .container .slider-wrapper .slider-nav a{
+    border: 2px solid #B4B4B4 ;
+    background-color: #B4B4B4;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: opacity ease 250ms;
+    transition: 0s;
+}
+article .container .slider-wrapper .slider-nav a:focus{
+    opacity: 1;
+    background-color:  #FB8500;
+} 
+article .container .slider-wrapper .slider-nav a:hover{
+    opacity: 1;
+    background-color:  #FB8500;
+} 
+
+
+article .topCont .grain{
+    margin-top: 20px;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+article .topCont .grain .grainsTypes{
+    width: 350px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+article .topCont .grain .grainsTypes  .choiceCont{
+    width: 280px;
+    height: 350px;
+    border-radius: 30px; 
+    background-color: #fff; 
+}
+
+article .topCont .grain .grainsTypes  .choiceCont a {
+    text-decoration: none;
+    color: #000;
+}
+article .topCont .grain .grainsTypes  .choiceCont h2{
+    margin-top: 170px;
+    margin-left:  50px;
+    text-align: start;
+    width: 90px;
+    font-weight: 900;
+
+}
+
+article .topCont .grain .grainsTypes  .choiceCont hr{
+    margin-top: 30px;
+    opacity: 0.3;
+}
+
+article .topCont .grain .grainsTypes  .choiceCont .timePrice{
+    width: 90%;
+    height: 80px;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: row;
+   gap: 150px;
+}
+article .topCont .grain .grainsTypes  .choiceCont .timePrice span{
+    flex-direction: column;
+}
+article .topCont .grain .grainsTypes  .choiceCont .timePrice span .A{
+    height: auto;
+    width: 10px;
+}
+
+article .topCont .grain .grainsTypes  .choiceCont .timePrice span .B{
+    font-weight: 900;
+   width: 5px;
+}
+article .topCont .grain .grainsTypes  .choiceCont .timePrice  .C{
+    margin-top: 38px;
+    font-weight: 900;
+}
+
+
+
+article .topCont .grain .grainsTypes .imgCont img{
+    position: relative;
+    margin-left: 20px;
+    bottom: 450px;
+}
+
+article .topCont .grain2{
+    margin-top: 100px;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+article .topCont .grain2 .grainsTypes{
+    width: 350px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+article .topCont .grain2 .grainsTypes  .choiceCont{
+    width: 280px;
+    height: 350px;
+    border-radius: 30px; 
+    background-color: #fff; 
+}
+
+article .topCont .grain2 .grainsTypes  .choiceCont a {
+    text-decoration: none;
+    color: #000;
+}
+article .topCont .grain2 .grainsTypes  .choiceCont h2{
+    margin-top: 170px;
+    margin-left:  50px;
+    text-align: start;
+    width: 90px;
+    font-weight: 900;
+
+}
+
+article .topCont .grain2 .grainsTypes  .choiceCont hr{
+    margin-top: 30px;
+    opacity: 0.3;
+}
+
+article .topCont .grain2 .grainsTypes  .choiceCont .timePrice{
+    width: 90%;
+    height: 80px;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: row;
+   gap: 150px;
+}
+article .topCont .grain2 .grainsTypes  .choiceCont .timePrice span{
+    flex-direction: column;
+}
+article .topCont .grain2 .grainsTypes  .choiceCont .timePrice span .A{
+    height: auto;
+    width: 10px;
+}
+
+article .topCont .grain2 .grainsTypes  .choiceCont .timePrice span .B{
+    font-weight: 900;
+   width: 5px;
+}
+article .topCont .grain2 .grainsTypes  .choiceCont .timePrice  .C{
+    margin-top: 38px;
+    font-weight: 900;
+}
+
+
+
+article .topCont .grain2 .grainsTypes .imgCont img{
+    position: relative;
+    margin-left: 20px;
+    bottom: 450px;
+}
+
+
+
+
+
